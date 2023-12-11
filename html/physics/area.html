@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<title>Unit Converter - Area</title>
+<head>
+  <link rel="icon" href="../../image/web-logo.jpg">
+  <link rel="stylesheet" href="../../style/index.css">
+   <!--SIDEBAR BOOSTRAP-->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- bootstrap --><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <!--Font awesomq-->
+
+<!--Meta tags-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+
+
+</head>
+<body>
+   <!-- sidebar starts -->
+   <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button btn-secondary w3-large" onclick="w3_close()"> &times;</button>
+    <div class="dropdown-container">
+      <a href="../../index.html" class="w3-bar-item btn btn btn btn-secondary mb-3">Home</a>
+      <a href="../../html/physics/Weigth.html" class="w3-bar-item btn btn mb-3">Mass</a>
+      <a href="../../html/physics/length.html" class="w3-bar-item btn btn mb-3">Length</a>
+      <a href="../../html/physics/temperature.html" class="w3-bar-item btn btn mb-3">Temperature</a>
+      <a href="../../html/physics/volume.html" class="w3-bar-item btn btn mb-3">Volume</a>
+      <a href="../../html/physics/area.html" class="w3-bar-item btn btn mb-3">Area</a>
+      <a href="../../html/physics/(FAQs).html" class="w3-bar-item btn btn-secondary mb-3">FAQs</a>
+    </div>
+  </div>
+
+<div id="main">
+  
+  <div class="w3-teal text-white bg-dark ">
+    <button id="openNav" class="w3-button w3-teal w3-xlarge text-white bg-dark" onclick="w3_open()">&#9776;</button>
+    <img class="logo" src="../../web-logo.png" alt="" srcset="">
+    <div class="w3-container">
+      
+    </div>
+  </div>
+  
+  <h1 class="text-center text-white bg-dark header-text text-uppercase"> <a href="#" class="text-light">Conversion Calculator</a> <i class="fa fa-calculator"></i></h1>
+    <h2 class="text-center">Area Conversion</h2>
+    <p class="about-para">
+      Area is the measure of a region's size on a surface. The area of a plane region or plane area refers to the 
+      area of a shape or planar lamina, while surface area refers to the area of an open surface or the boundary of 
+      a three-dimensional object. Area can be understood as the amount of material with a given thickness that would 
+      be necessary to fashion a model of the shape, or the amount of paint necessary to cover the surface with a single 
+      coat. It is the two-dimensional analogue of the length of a curve (a one-dimensional concept) or the volume of
+       a solid (a three-dimensional concept). Two different regions may have the same area (as in squaring the circle); 
+       by synecdoche, "area" sometimes is used to refer to the region, as in a "polygonal area".
+
+    </p>
+    
+    <p class="about-para">
+      <h3 class="text-center">Enter value in any input field to determine values in other units</h3>
+    </p>
+
+  <div class="container jumbotron">
+  <div class="container-fluid">
+    
+    <!--menu digital-->
+    <div class="row">
+      <div class="dropdown-container text-center ">
+      <div class="dropdown">
+        <a class="btn btn btn-lg" href="../../html/physics/Weigth.html" role="button" id="dropdownMenuLink">
+            Mass 
+          </a>
+        </div>
+        </div>
+      
+
+
+        <div class="dropdown-container text-center">
+          <div class="dropdown">
+            <a class="btn btn btn-lg" href="../../html/physics/length.html" role="button" id="dropdownMenuLink">
+                length 
+              </a>
+            </div>
+            </div>
+
+            <div class="dropdown-container text-center">
+              <div class="dropdown">
+                  <a class="btn btn btn-lg" href="../../html/physics/temperature.html" role="button" id="dropdownMenuLink">
+                    Temperature 
+                  </a>
+                
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    
+                  </div>
+                </div>
+                </div>
+
+
+                    <div class="dropdown-container text-center">
+                      <div class="dropdown">
+                        <a class="btn btn btn-lg" href="../../html/physics/volume.html" role="button" id="dropdownMenuLink">
+                          Volume
+                          </a>
+                        
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                           
+
+                          </div>
+                        </div>
+                        </div>
+
+                        <div class="dropdown-container text-center">
+                          <div class="dropdown">
+                            <a class="btn btn btn-lg" href="../../html/physics/area.html" role="button" id="dropdownMenuLink">
+                                Area 
+                              </a>
+                            
+
+                            </div>
+                            </div>
+
+
+                            
+
+          </div>
+
+      
+        <div class="text-center">
+
+<div class="row">
+  
+<div class="col">
+<label>Square Milimeter </label><br>
+<input id= "square-milimeter" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Milimeter"
+onchange="fromSquareMilimeterToOther(this.value)" oninput = "fromSquareMilimeterToOther(this.value)">
+</div>
+</div>
+
+<div class="row">
+  <div class="col">
+  <label>Square Meter</label><br>
+  <input id="square-meter" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="Square Meter"
+  onchange="fromSquareMeterToOther(this.value)" oninput="fromSquareMeterToOther(this.value)"></div>
+        <div class="col ">
+<label>Square kilometer</label><br>
+<input id= "square-kilometer" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Kilometer"
+onchange="fromSquareKilometerToOthers(this.value)" oninput = "fromSquareKilometerToOthers(this.value)"><br>
+</div>
+</div>
+
+
+
+
+<div class="row">
+  <div class="col">
+    <label>Acre</label><br>
+    <input id= "acre" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Acre"
+    onchange="fromAcreToOthers(this.value)" oninput = "fromAcreToOthers(this.value)">
+    </div>
+<div class="col">
+<label>Hectare</label><br>
+<input id= "hectare" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Hectare"
+onchange="fromHectarToOthers(this.value)" oninput = "fromHectarToOthers(this.value)">
+</div>
+</div>
+
+<div class="row">
+  <div class="col">
+<label>Square Mile</label><br>
+<input id= "square-mile" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Mile"
+onchange="fromSquareMileToOthers(this.value)" oninput = "fromSquareMileToOthers(this.value)">
+</div>
+
+<div class="col">
+    <label>Square Yard</label><br>
+    <input id= "square-yard" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Yard"
+    onchange="fromSquareYardToOthers(this.value)" oninput = "fromSquareYardToOthers(this.value)">
+    </div>
+
+</div>
+
+
+<div class="row">
+  <div class="col">
+<label>Square Foot</label><br>
+<input id= "square-foot" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Foot"
+onchange="fromSquareFootToOthers(this.value)" oninput = "fromSquareFootToOthers(this.value)">
+</div>
+
+<div class="col">
+    <label>Square Inch</label><br>
+    <input id= "square-inch" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Inch"
+    onchange="fromSquareInchToOthers(this.value)" oninput = "fromSquareInchToOthers(this.value)">
+    </div>
+
+
+</div>
+
+
+
+</div>
+<script src = "../../js/physics/area-conversion.js"></script>
+
+</div>
+</div>
+
+<div class="container-fluid">
+  <h1 class="text-center">Brief History of Area</h1>
+  <p class="about-para">
+    Every unit of length has a corresponding unit of area, namely the area of a square with the given side length.
+     Thus areas can be measured in square metres (m2), square centimetres (cm2), square millimetres (mm2), square 
+     kilometres (km2), square feet (ft2), square yards (yd2), square miles (mi2), and so forth.[13] Algebraically, 
+     these units can be thought of as the squares of the corresponding length units.
+
+    The SI unit of area is the square metre, which is considered an SI derived unit.
+  </p>
+  <p class="about-para">The area of a shape can be measured by comparing the shape to squares of a fixed size.[2] In the 
+    International System of Units (SI), the standard unit of area is the square metre (written as m2), which is the area
+     of a square whose sides are one metre long.[3] A shape with an area of three square metres would have the same area
+      as three such squares. In mathematics, the unit square is defined to have area one, and the area of any other 
+      shape or surface is a dimensionless real number.</p>
+  <p class="about-para">In the 5th century BCE, Hippocrates of Chios was the first to show that the area of a disk (the region enclosed
+  by a circle) is proportional to the square of its diameter, as part of his quadrature of the lune of Hippocrates,
+  but did not identify the constant of proportionality. Eudoxus of Cnidus, also in the 5th century BCE, also found that
+   the area of a disk is proportional to its radius squared.</p>
+</div>
+</div>
+<!-- java start -->
+<script src="../../js/sidebar.js"></script>
+<!-- java ends -->
+
+</body>
+<footer class="bg-dark">
+  <div class="container-fluid text-center">
+      <a href="https://www.facebook.com/shaikhsajid1111" class="fa fa-facebook" target="_blank"></a>
+      <a href="https://www.twitter.com/shaikhsajid1111" class="fa fa-twitter" target="_blank"></a>
+      <a href="https://www.instagram.com/shaikhsajid1111" class="fa fa-instagram" target="_blank"></a>
+      <a href="https://www.github.com/shaikhsajid1111" class="fa fa-github" target="_blank"></a>
+  </div>
+  <p class="pt-2 text-center text-white"><a href="https://www.github.com/shaikhsajid1111" class="text-white">USMAN JAMSHAID,UMERJAMSHAIS,SHRJEEL HAFIZ &#169; 2020
+  </a></p>
+
+
+</footer>
+</html>

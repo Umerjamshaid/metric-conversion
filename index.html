@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<title>Unit Converter-HOME</title>
+
+<head>
+  <link rel="icon" href="image/web-logo.jpg">
+  <link rel="stylesheet" href="style/index.css">
+  <!--SIDEBAR BOOSTRAP-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Font awesomq-->
+
+  <!--Meta tags-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+  <meta name="author" content="Usman Jamshaid">
+
+  <!--Meta tags above-->
+
+</head>
+
+<body style="background-color: #e0e1dd;">
+  <!-- sidebar starts -->
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button btn-secondary w3-large" onclick="w3_close()"> &times;</button>
+    <div class="dropdown-container">
+      <a href="index.html" class="w3-bar-item btn btn btn btn-secondary mb-3">Home</a>
+      <a href="html/physics/Weigth.html" class="w3-bar-item btn btn mb-3">Mass</a>
+      <a href="html/physics/length.html" class="w3-bar-item btn btn mb-3">Length</a>
+      <a href="html/physics/temperature.html" class="w3-bar-item btn btn mb-3">Temperature</a>
+      <a href="html/physics/volume.html" class="w3-bar-item btn btn mb-3">Volume</a>
+      <a href="html/physics/area.html" class="w3-bar-item btn btn mb-3">Area</a>
+      <a href="html/physics/(FAQs).html" class="w3-bar-item btn btn-secondary mb-3">FAQs</a>
+    </div>
+  </div>
+
+  <div id="main">
+
+    <div class="w3-teal text-white bg-dark ">
+      <button id="openNav" class="w3-button w3-teal w3-xlarge text-white bg-dark" onclick="w3_open()">&#9776;</button>
+      <img class="logo" src="web-logo.png" alt="" srcset="">
+      <div class="w3-container">
+
+      </div>
+    </div>
+
+
+
+    <!-- sidebar ends -->
+
+    <h2 class="text-center text-white bg-dark text-uppercase header-text"> <a href="#" class="text-light">Conversion
+        Calculator</a></h2>
+
+    <!-- carusel starts -->
+    <!-- <div class="slideshow-container">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="h1_hero-1.jpg" style="width:100%" height="620px">
+      <div class="text">The metric system is an internationally recognised 
+        decimalised system of measurement. It is in widespread use, 
+        and where it is adopted, it is the only or most common system of weights 
+        and measures (see metrication). 
+        It is now known as the International System of Units (SI).
+         It is used to measure everyday things such as the mass of a sack of flour, 
+         the height of a person, the speed of a car, and the volume of fuel in its tank.
+          It is also used in science, industry and trade.</div>
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="h1_hero-2.jpg" style="width:100%" height="620px">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="h1_hero-3.jpg" style="width:100%" height="620px">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div> -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="image/h1_1.jpg" style="width:100%" height="620px" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="image/h1_2.jpg" style="width:100%" height="620px" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="image/h1_3.jpg" style="width:100%" height="620px" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <br>
+
+    <!-- <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div> -->
+
+
+    <!-- carousel ends -->
+
+    <h3 class="text-center"><b>Metric Conversion Calculator</b></h3>
+    <!-- <p class="about-para">
+        The metric system is an internationally recognised 
+        decimalised system of measurement. It is in widespread use, 
+        and where it is adopted, it is the only or most common system of weights 
+        and measures (see metrication). 
+        It is now known as the International System of Units (SI).
+         It is used to measure everyday things such as the mass of a sack of flour, 
+         the height of a person, the speed of a car, and the volume of fuel in its tank.
+          It is also used in science, industry and trade.
+
+    </p>
+    <p class="about-para">The metric system was designed to have properties 
+      that make it easy to use and widely applicable, including units based 
+      on the natural world, decimal ratios, prefixes for multiples and sub-multiples, 
+      and a structure of base and derived units. It is also a coherent system, which 
+      means that its units do not introduce conversion factors not already present in 
+      equations relating quantities. It has a property called rationalisation that 
+      eliminates certain constants of proportionality 
+      in equations of physics.</p> -->
+    <!-- <p class="about-para">
+      <h3 class="text-center">Enter value in any input field to determine values in other units</h3>
+    </p> -->
+    <div class="container jumbotron">
+      <div class="container-fluid">
+
+<h1 style="text-align: center; color: #0d1b2a;">Click the button to convert the value of your choice</h1>
+
+        <!--menu digital-->
+        <div class="row">
+          <div class="dropdown-container text-center ">
+            <div class="dropdown">
+              <a class="btn btn btn-lg" href="html/physics/Weigth.html" role="button" id="dropdownMenuLink">
+                Mass
+              </a>
+
+            </div>
+          </div>
+
+
+          <!--menu-physics-->
+          <div class="dropdown-container text-center">
+            <div class="dropdown">
+              <a class="btn btn btn-lg" href="html/physics/length.html" role="button" id="dropdownMenuLink">
+                length
+              </a>
+            
+            </div>
+          </div>
+
+          <div class="dropdown-container text-center">
+            <div class="dropdown">
+              <a class="btn btn btn-lg" href="html/physics/temperature.html" role="button" id="dropdownMenuLink">
+                Temperature
+              </a>
+            </div>
+          </div>
+
+
+          <div class="dropdown-container text-center">
+            <div class="dropdown">
+              <a class="btn btn btn-lg" href="html/physics/volume.html" role="button" id="dropdownMenuLink">
+                Volume
+              </a>
+            </div>
+          </div>
+
+          <div class="dropdown-container text-center">
+            <div class="dropdown">
+              <a class="btn btn btn-lg" href="html/physics/area.html" role="button" id="dropdownMenuLink">
+                Area
+              </a>
+            </div>
+          </div>
+
+          <!-- <div class="dropdown-container text-center ">
+                              <div class="dropdown">
+                                <a class="btn btn btn-lg" href="index.html" role="button" id="dropdownMenuLink">
+                                    Home 
+                                  </a>
+                                
+                                </div>
+                                </div> -->
+          <div class="dropdown-container text-center ">
+            <div class="dropdown">
+              <a class="btn btn btn" href="html/physics/(FAQs).html" role="button" id="dropdownMenuLink">
+                FAQs
+              </a>
+
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+        <!-- <div class="text-center">
+
+
+<div class="row">
+  <div class="col">
+  <label>Pounds</label><br>
+  <input id="pounds" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="Pounds"
+  onchange="fromPoundsToOther(this.value)" oninput="fromPoundsToOther(this.value)"></div>
+        <div class="col ">
+<label>Gram</label><br>
+<input id= "grams" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Grams"
+onchange="fromGramToOthers(this.value)" oninput = "fromGramToOthers(this.value)">
+</div>
+</div>
+
+
+<div class="row">
+  <div class="col">
+  <label>kilogram</label><br>
+<input id= "kilogram" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Kilogram"
+onchange="fromKilogramToOther(this.value)" oninput = "fromKilogramToOther(this.value)">
+</div>
+<div class="col">
+<label>Ounces</label><br>
+<input id= "ounce" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Ounce"
+onchange="fromOuncesToOther(this.value)" oninput = "fromOuncesToOther(this.value)">
+</div>
+</div>
+
+<div class="row">
+
+  <div class="col">
+<label>Stone</label><br>
+<input id= "stone" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Stone"
+onchange="fromStoneToOthers(this.value)" oninput = "fromStoneToOthers(this.value)">
+</div>
+<div class="col">
+<label>Carat</label><br>
+<input id= "carat" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Carat"
+onchange="fromCaratToOthers(this.value)" oninput = "fromCaratToOthers(this.value)">
+</div>
+</div>
+
+<div class="row">
+  <div class="col">
+<label>Miligrams</label><br>
+<input id= "miligram" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Miligrams"
+onchange="fromMiligramToOthers(this.value)" oninput = "fromMiligramToOthers(this.value)">
+</div>
+
+<div class="col">
+    <label>Metric ton</label><br>
+    <input id= "metric-ton" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Metric Ton"
+    onchange="fromMetricTonToOthers(this.value)" oninput = "fromMetricTonToOthers(this.value)">
+    </div>
+
+</div>
+
+
+</div>
+<script src = "js/physics/weight-conversion.js"></script> -->
+
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <h1 class="text-center">Brief History of the Metric System</h1>
+      <p class="about-para">
+        Historically, many different systems of units have been used, where a system of units is defined as a collection
+        of units of measurement with rules that relate them to each other. A unit of measurement is a defined magnitude
+        of a quantity that it used as a standard for measurement for the same kind of quantity, such as measurements of
+        length, weight, and volume.
+
+        In the past, many systems of measurement were defined on a local level, and could be based on factors as
+        arbitrary as the length of a king's thumb. While this may work on a local level, when considering trade, as well
+        as science, having systems of units based on units that others may not be able to relate to or understand makes
+        interaction difficult. As such, the development of more universal and consistent systems developed over time.
+        Today, some of the systems of units in use include the metric system, the imperial system, and the United States
+        customary units.
+
+        The International System of Units (SI) is the standard metric system that is currently used, and consists of
+        seven SI base units of length, mass, time, temperature, electric current, luminous intensity, and amount of
+        substance. Although SI is used almost universally in science (including in the US), some countries such as the
+        United States still use their own system of units. This is partly due to the substantial financial and cultural
+        costs involved in changing a measurement system compared to the potential benefit of using a standardized
+        system. Since US customary units (USC) are so entrenched in the United States, and SI is already used in most
+        applications where standardization is important, everyday use of USC is still prevalent in the United States,
+        and is unlikely to change. As such, many unit converters including this Conversion Calculator exist, and will
+        continue to do so to ensure that people globally are able to communicate different measurements effectively.
+      </p>
+    </div>
+  </div>
+  <!-- java start -->
+  <script src="js/sidebar.js"></script>
+  <script src="js/carousel.js"></script>
+  <!-- java ends -->
+
+</body>
+<footer class="BG">
+  <div class="container-fluid text-center pt-1">
+    <a href="#" class="fa fa-facebook" target="_blank"></a>
+    <a href="#" class="fa fa-twitter" target="_blank"></a>
+    <a href="#" class="fa fa-instagram" target="_blank"></a>
+    <a href="#" class="fa fa-github" target="_blank"></a>
+  </div>
+  <p class="pt-2 text-center"><a href="#" class="text-white">USMAN JAMSHAID,UMERJAMSHAIS,SHRJEEL HAFIZ &#169; 2023
+    </a></p>
+
+</footer>
+
+</html>

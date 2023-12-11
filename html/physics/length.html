@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<title>Unit Converter - Length</title>
+<head>
+  <link rel="icon" href="../../image/web-logo.jpg">
+  <link rel="stylesheet" href="../../style/index.css">
+   <!--SIDEBAR BOOSTRAP-->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- bootstrap --><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <!--Font awesomq-->
+
+<!--Meta tags-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+
+<meta name="title" content="conversion calculator">
+<meta name="description" content="convert units dynamically">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta name="revisit-after" content="2 days">
+<meta name="author" content="sajid shaikh">
+
+
+
+
+
+<!--Meta tags above-->
+</head>
+<body>
+  <!-- sidebar starts -->
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large"
+    onclick="w3_close()">Close &times;</button>
+   <div class="dropdown-container">
+    <a href="../../index.html" class="w3-bar-item btn btn btn btn-secondary mb-3">Home</a>
+    <a href="../../html/physics/Weigth.html" class="w3-bar-item btn btn mb-3">Mass</a>
+    <a href="../../html/physics/length.html" class="w3-bar-item btn btn mb-3">Length</a>
+    <a href="../../html/physics/temperature.html" class="w3-bar-item btn btn mb-3">Temperature</a>
+    <a href="../../html/physics/volume.html" class="w3-bar-item btn btn mb-3">Volume</a>
+    <a href="../../html/physics/area.html" class="w3-bar-item btn btn mb-3">Area</a>
+    <a href="../../html/physics/(FAQs).html" class="w3-bar-item btn btn-secondary mb-3">FAQs</a>
+    <!-- <div class="dropdown-container text-center">
+      <div class="dropdown">
+          <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Digital 
+          </a>
+        
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            
+            <a class="dropdown-item" href="html/digital/number-conversion.html">Number</a>
+            <a class="dropdown-item" href="html/digital/digital-storage.html">Digital Storage</a>
+          </div>
+        </div>
+         </div> -->
+  </div>
+</div>
+  
+  <div id="main">
+  
+  <div class="w3-teal text-white bg-dark ">
+    <button id="openNav" class="w3-button w3-teal w3-xlarge text-white bg-dark" onclick="w3_open()">&#9776;</button>
+    <img class="logo" src="../../web-logo.png" alt="" srcset="">   
+    <div class="w3-container">
+      
+    </div>
+  </div>
+  
+
+  
+<!-- sidebar ends -->
+
+
+  <h1 class="text-center text-white bg-dark header-text text-uppercase"> <a href="#" class="text-light">Conversion Calculator</a> <i class="fa fa-calculator"></i></h1>
+    <h2 class="text-center">Length Conversion</h2>
+    <p class="about-para">
+      Length is a measure of distance. In the International System of 
+      Quantities, length is a quantity with dimension distance. 
+      In most systems of measurement a base unit for length is chosen, from which 
+      all other units are derived. In the International System of Units 
+      (SI) system the base unit for length is the metre.
+
+      Length is commonly understood to mean the most extended dimension of a fixed object.
+      However, this is not always the case and may depend on the position the object is in.
+
+    </p>
+    
+    <p class="about-para">
+      <h3 class="text-center">Enter value in any input field to determine values in other units</h3>
+    </p>
+  <div class="container jumbotron">
+  <div class="container-fluid">
+    
+      
+    <!--menu digital-->
+    <div class="row">
+      <div class="dropdown-container text-center ">
+      <div class="dropdown">
+        <a class="btn btn btn-lg" href="../../html/physics/Weigth.html" role="button" id="dropdownMenuLink">
+            Mass 
+          </a>
+        
+        </div>
+        </div>
+      
+
+<!--menu-physics-->
+        <div class="dropdown-container text-center">
+          <div class="dropdown">
+            <a class="btn btn btn-lg" href="../../html/physics/length.html" role="button" id="dropdownMenuLink">
+                length 
+              </a>
+            <!--Physics list item-->
+              <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="html/physics/length.html">Length</a>
+                <a class="dropdown-item" href="html/physics/temperature.html">Temperature</a>
+                <a class="dropdown-item" href="html/physics/speed.html">Volume</a>
+                <a class="dropdown-item" href="html/physics/area.html">Area</a>
+              </div> -->
+            </div>
+            </div>
+
+            <div class="dropdown-container text-center">
+              <div class="dropdown">
+                  <a class="btn btn btn-lg" href="../../html/physics/temperature.html" role="button" id="dropdownMenuLink">
+                    Temperature 
+                  </a>
+                
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <!--add menu item later for chemistry-->
+                  </div>
+                </div>
+                </div>
+
+
+                    <div class="dropdown-container text-center">
+                      <div class="dropdown">
+                        <a class="btn btn btn-lg" href="../../html/physics/volume.html" role="button" id="dropdownMenuLink">
+                          Volume
+                          </a>
+                        
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <!--Maths item-->
+                            <!-- <a class="dropdown-item" href="html/geometry/circle.html">Circle</a>
+                            <a class="dropdown-item" href="html/geometry/square.html">Square</a>
+                            <a class="dropdown-item" href="html/geometry/rectangle.html">Rectangle</a> -->
+
+                          </div>
+                        </div>
+                        </div>
+
+                        <div class="dropdown-container text-center">
+                          <div class="dropdown">
+                            <a class="btn btn btn-lg" href="../../html/physics/area.html" role="button" id="dropdownMenuLink">
+                                Area 
+                              </a>
+                            
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <!--finance item-->
+                              </div>
+                            </div>
+                            </div>
+
+
+                            
+
+          </div>
+
+      
+        <div class="text-center">
+
+
+<div class="row">
+  <div class="col">
+  <label>Meter</label><br>
+  <input id="meter" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="Meter"
+  onchange="fromMeterToOther(this.value)" oninput="fromMeterToOther(this.value)"></div>
+        <div class="col ">
+<label>Kilometer</label><br>
+<input id= "kilometer" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Kilometer"
+onchange="fromKilometerToOthers(this.value)" oninput = "fromKilometerToOthers(this.value)"><br>
+</div>
+</div>
+
+
+<div class="row">
+  <div class="col">
+<label>Miles</label><br>
+<input id= "miles" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Miles"
+onchange="fromMilesToOthers(this.value)" oninput = "fromMilesToOthers(this.value)">
+</div>
+
+<div class="col">
+    <label>Yard</label><br>
+    <input id= "yard" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Yard"
+    onchange="fromYardToOthers(this.value)" oninput = "fromYardToOthers(this.value)">
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col">
+  <label>Foot</label><br>
+  <input id= "foot" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Foot"
+  onchange="fromFootToOthers(this.value)" oninput = "fromFootToOthers(this.value)">
+  </div>
+  
+  <div class="col">
+      <label>Inch</label><br>
+      <input id= "inch" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Inch"
+      onchange="fromInchToOthers(this.value)" oninput = "fromInchToOthers(this.value)">
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+    <label>Milimeter</label><br>
+    <input id= "milimeter" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Milimeter"
+    onchange="fromMilimeterToOther(this.value)" oninput = "fromMilimeterToOther(this.value)">
+    </div>
+    </div>
+
+
+</div>
+<script src = "../../js/physics/length-conversion.js"></script>
+
+</div>
+</div>
+
+<div class="container-fluid">
+  <h1 class="text-center">Brief History of Measurement</h1>
+  <p class="about-para">
+    Measurement has been important ever since humans settled from nomadic 
+    lifestyles and started using building materials, occupying land and trading with neighbours. 
+    As trade between different places increased, the need for standard units of length increased. 
+    And later, as society has become more technologically oriented, much higher accuracy of measurement 
+    is required in an increasingly diverse set of fields, from micro-electronics to interplanetary ranging.
+    <br>
+    Under Einstein's special relativity, length can no longer be thought of as being constant in all reference frames. Thus a ruler that is one metre long in one frame of reference will not be one metre long in a reference frame that is moving relative to the first frame. This means the length of an object varies depending on the speed of the observer.
+  </p>
+  <p class="about-para">Various terms for the length of a fixed object are used, and these 
+    include height, which is vertical length or vertical extent, and width, breadth or depth. 
+    Height is used when there is a base from which vertical measurements can be taken. Width or 
+    breadth usually refer to a shorter dimension when length is the longest one. Depth is used for 
+    the third dimension of a three dimensional object.
+
+    Length is the measure of one spatial dimension, whereas area is a measure of two dimensions 
+    (length squared) and volume is a measure of three dimensions (length cubed).</p>
+</div>
+<!-- java start -->
+<script src="../../js/sidebar.js"></script>
+<!-- java ends -->
+
+</body>
+<footer class="bg-dark">
+  <div class="container-fluid text-center">
+      <a href="https://www.facebook.com/shaikhsajid1111" class="fa fa-facebook" target="_blank"></a>
+      <a href="https://www.twitter.com/shaikhsajid1111" class="fa fa-twitter" target="_blank"></a>
+      <a href="https://www.instagram.com/shaikhsajid1111" class="fa fa-instagram" target="_blank"></a>
+      <a href="https://www.github.com/shaikhsajid1111" class="fa fa-github" target="_blank"></a>
+  </div>
+  <p class="pt-2 text-center text-white"><a href="https://www.github.com/shaikhsajid1111" class="text-white">USMAN JAMSHAID,UMERJAMSHAIS,SHRJEEL HAFIZ &#169; 2020
+  </a></p>
+
+
+</footer>
+</html>

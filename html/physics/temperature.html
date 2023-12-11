@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<title>Unit Converter - Temperature</title>
+<head>
+  <link rel="icon" href="../../image/web-logo.jpg">
+  <link rel="stylesheet" href="../../style/index.css">
+   <!--SIDEBAR BOOSTRAP-->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- bootstrap --><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <!--Font awesomq-->
+
+
+<!--Meta tags-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+
+</head>
+<body>
+   <!-- sidebar starts -->
+   <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large"
+    onclick="w3_close()">Close &times;</button>
+   <div class="dropdown-container">
+    <a href="../../index.html" class="w3-bar-item btn btn btn btn-secondary mb-3">Home</a>
+    <a href="../../html/physics/Weigth.html" class="w3-bar-item btn btn mb-3">Mass</a>
+    <a href="../../html/physics/length.html" class="w3-bar-item btn btn mb-3">Length</a>
+    <a href="../../html/physics/temperature.html" class="w3-bar-item btn btn mb-3">Temperature</a>
+    <a href="../../html/physics/volume.html" class="w3-bar-item btn btn mb-3">Volume</a>
+    <a href="../../html/physics/area.html" class="w3-bar-item btn btn mb-3">Area</a>
+    <a href="../../html/physics/(FAQs).html" class="w3-bar-item btn btn-secondary mb-3">FAQs</a>
+
+  </div>
+</div>
+  
+  <div id="main">
+  
+  <div class="w3-teal text-white bg-dark ">
+    <button id="openNav" class="w3-button w3-teal w3-xlarge text-white bg-dark" onclick="w3_open()">&#9776;</button>
+    <img class="logo" src="../../web-logo.png" alt="" srcset="">
+    <div class="w3-container">
+      
+    </div>
+  </div>
+  
+
+  
+<!-- sidebar ends -->
+  <h2 class="text-center text-white bg-dark text-uppercase header-text"> <a href="#" class="text-light">Conversion Calculator</a> <i class="fa fa-calculator"></i></h2>
+    <h2 class="text-center">Temperature Conversion</h2>
+    
+    <p class="about-para">Temperature is important in all fields of natural science, including physics, chemistry,
+       Earth science, astronomy, medicine, biology, ecology, material science, metallurgy, mechanical engineering and 
+       geography as well as most aspects of daily life.</p>
+    <p class="about-para">
+      <h3 class="text-center">Enter value in any input field to determine values in other units</h3>
+    </p>
+  <div class="container jumbotron">
+  <div class="container-fluid">
+    
+      
+    <!--menu digital-->
+    <div class="row">
+      <div class="dropdown-container text-center ">
+      <div class="dropdown">
+        <a class="btn btn btn-lg" href="../../html/physics/Weigth.html" role="button" id="dropdownMenuLink">
+            Mass 
+          </a>
+        
+        </div>
+        </div>
+      
+
+
+        <div class="dropdown-container text-center">
+          <div class="dropdown">
+            <a class="btn btn btn-lg" href="../../html/physics/length.html" role="button" id="dropdownMenuLink">
+                length 
+              </a>
+            
+            </div>
+            </div>
+
+            <div class="dropdown-container text-center">
+              <div class="dropdown">
+                  <a class="btn btn btn-lg" href="../../html/physics/temperature.html" role="button" id="dropdownMenuLink">
+                    Temperature 
+                  </a>
+                
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                   
+                  </div>
+                </div>
+                </div>
+
+
+                    <div class="dropdown-container text-center">
+                      <div class="dropdown">
+                        <a class="btn btn btn-lg" href="../../html/physics/volume.html" role="button" id="dropdownMenuLink">
+                          Volume
+                          </a>
+                        
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+                          </div>
+                        </div>
+                        </div>
+
+                        <div class="dropdown-container text-center">
+                          <div class="dropdown">
+                            <a class="btn btn btn-lg" href="../../html/physics/area.html" role="button" id="dropdownMenuLink">
+                                Area 
+                              </a>
+                            
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    
+                              </div>
+                            </div>
+                            </div>
+
+
+                            
+
+          </div>
+
+      
+        <div class="text-center">
+
+  <label>Fahrenheit</label><br>
+  <input id="fahrenheit" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="Fahrenheit"
+  onchange="fromFahrenheitToOther(this.value)" oninput="fromFahrenheitToOther(this.value)">
+        
+
+<label>Celsius</label><br>
+<input id= "celsius" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Celsius"
+onchange="fromCelsiusToOthers(this.value)" oninput = "fromCelsiusToOthers(this.value)"><br>
+
+
+</div>
+
+
+</div>
+</div>
+
+<div class="container-fluid">
+  <h1 class="text-center">The Brief History of Temperature</h1>
+  <p class="about-para">
+    Temperature is a physical quantity that expresses quantitatively the attribute of hotness or coldness.
+     Temperature is measured with a thermometer. It reflects the kinetic energy of the vibrating and colliding
+      atoms making up a substance.
+
+    Thermometers are calibrated in various temperature scales that historically have relied on various reference 
+    points and thermometric substances for definition. The most common scales are the Celsius scale with the unit 
+    symbol °C (formerly called centigrade), the Fahrenheit scale (°F), and the Kelvin scale (K), the latter being 
+    used predominantly for scientific purposes. The kelvin is one of the seven base units in the International System
+     of Units (SI).
+
+  </p>
+  <p class="about-para">
+    The basic unit of temperature in the International System of Units (SI) is the kelvin. It has the symbol K.
+
+    For everyday applications, it is often convenient to use the Celsius scale, in which 0 °C corresponds very 
+    closely to the freezing point of water and 100 °C is its boiling point at sea level. Because liquid droplets 
+    commonly exist in clouds at sub-zero temperatures, 0 °C is better defined as the melting point of ice. In this 
+    scale, a temperature difference of 1 degree Celsius is the same as a 1kelvin increment, but the scale is offset 
+    by the temperature at which ice melts (273.15 K).
+  </p>
+  <p class="about-para">The Italian astronomer Galileo (1564–1642) was one of the first scientists recorded to have actually used 
+  a device that measured temperature, though it is unclear whether he actually built it himself or acquired 
+  the idea from someone else.
+  </p>
+</div>
+</div>
+<!-- java start -->
+<script src="../../js/sidebar.js"></script>
+<!-- java ends -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src = "../../js/physics/temperature-conversion.js"></script>
+</body>
+<footer class="bg-dark">
+  <div class="container-fluid text-center">
+      <a href="https://www.facebook.com/shaikhsajid1111" class="fa fa-facebook" target="_blank"></a>
+      <a href="https://www.twitter.com/shaikhsajid1111" class="fa fa-twitter" target="_blank"></a>
+      <a href="https://www.instagram.com/shaikhsajid1111" class="fa fa-instagram" target="_blank"></a>
+      <a href="https://www.github.com/shaikhsajid1111" class="fa fa-github" target="_blank"></a>
+  </div>
+  <p class="pt-2 text-center text-white"><a href="https://www.github.com/shaikhsajid1111" class="text-white">USMAN JAMSHAID,UMERJAMSHAIS,SHRJEEL HAFIZ &#169; 2020
+  </a></p>
+
+
+</footer>
+</html>

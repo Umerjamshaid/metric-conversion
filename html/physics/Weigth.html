@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<title>Unit Converter - Temperature</title>
+<head>
+  <link rel="icon" href="../../image/web-logo.jpg">
+  <link rel="stylesheet" href="../../style/index.css">
+  <!--SIDEBAR BOOSTRAP-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- bootstrap --><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <!--Font awesomq-->
+
+
+
+<!--Meta tags-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+
+
+
+</head>
+<body>
+  <!-- sidebar starts -->
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large"
+    onclick="w3_close()">Close &times;</button>
+   <div class="dropdown-container">
+    <a href="../../index.html" class="w3-bar-item btn btn btn btn-secondary mb-3">Home</a>
+      <a href="../../html/physics/Weigth.html" class="w3-bar-item btn btn mb-3">Mass</a>
+      <a href="../../html/physics/length.html" class="w3-bar-item btn btn mb-3">Length</a>
+      <a href="../../html/physics/temperature.html" class="w3-bar-item btn btn mb-3">Temperature</a>
+      <a href="../../html/physics/volume.html" class="w3-bar-item btn btn mb-3">Volume</a>
+      <a href="../../html/physics/area.html" class="w3-bar-item btn btn mb-3">Area</a>
+      <a href="../../html/physics/(FAQs).html" class="w3-bar-item btn btn-secondary mb-3">FAQs</a>
+    <!-- <div class="dropdown-container text-center">
+      <div class="dropdown">
+          <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Digital 
+          </a>
+        
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            
+            <a class="dropdown-item" href="html/digital/number-conversion.html">Number</a>
+            <a class="dropdown-item" href="html/digital/digital-storage.html">Digital Storage</a>
+          </div>
+        </div>
+         </div> -->
+  </div>
+</div>
+  
+  <div id="main">
+  
+  <div class="w3-teal text-white bg-dark ">
+    <button id="openNav" class="w3-button w3-teal w3-xlarge text-white bg-dark" onclick="w3_open()">&#9776;</button>
+    <img class="logo" src="../../web-logo.png" alt="" srcset="">
+    <div class="w3-container">
+      
+    </div>
+  </div>
+  
+
+  
+<!-- sidebar ends -->
+
+  <h2 class="text-center text-white bg-dark text-uppercase header-text"> <a href="#" class="text-light">Conversion Calculator</a> <i class="fa fa-calculator"></i></h2>
+    <h2 class="text-center">Mass Conversion</h2>
+    <p class="about-para">
+      Mass is an intrinsic property of a body. It was traditionally believed to be 
+      related to the quantity of matter in a body, until the discovery of the atom and
+       particle physics. It was found that different atoms and different elementary particles,
+        theoretically with the same amount of matter, have nonetheless different masses. Mass 
+        in modern physics has multiple definitions which are conceptually distinct, 
+        but physically equivalent.
+
+
+
+    </p>
+    <p class="about-para"> Mass can be experimentally defined as a measure of the body's 
+      inertia, meaning the resistance to acceleration (change of velocity) when a net force is
+       applied.[1] The object's mass also determines the strength of its gravitational attraction to other bodies.</p>
+    <p class="about-para">
+      <h3 class="text-center">Enter value in any input field to determine values in other units</h3>
+    </p>
+  <div class="container jumbotron">
+  <div class="container-fluid">
+    
+      
+    <!--menu digital-->
+    <div class="row">
+      <div class="dropdown-container text-center ">
+      <div class="dropdown">
+        <a class="btn btn btn-lg" href="../../html/physics/Weigth.html" role="button" id="dropdownMenuLink">
+            Mass 
+          </a>
+        
+          
+        </div>
+        </div>
+      
+
+<!--menu-physics-->
+        <div class="dropdown-container text-center">
+          <div class="dropdown">
+            <a class="btn btn btn-lg" href="../../html/physics/length.html" role="button" id="dropdownMenuLink">
+                length 
+              </a>
+            <!--Physics list item-->
+              <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="html/physics/length.html">Length</a>
+                <a class="dropdown-item" href="html/physics/temperature.html">Temperature</a>
+                <a class="dropdown-item" href="html/physics/speed.html">Volume</a>
+                <a class="dropdown-item" href="html/physics/area.html">Area</a>
+              </div> -->
+            </div>
+            </div>
+
+            <div class="dropdown-container text-center">
+              <div class="dropdown">
+                  <a class="btn btn btn-lg" href="../../html/physics/temperature.html" role="button" id="dropdownMenuLink">
+                    Temperature 
+                  </a>
+                
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <!--add menu item later for chemistry-->
+                  </div>
+                </div>
+                </div>
+
+
+                    <div class="dropdown-container text-center">
+                      <div class="dropdown">
+                        <a class="btn btn btn-lg" href="../../html/physics/volume.html" role="button" id="dropdownMenuLink">
+                          Volume
+                          </a>
+                        
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <!--Maths item-->
+                            <!-- <a class="dropdown-item" href="html/geometry/circle.html">Circle</a>
+                            <a class="dropdown-item" href="html/geometry/square.html">Square</a>
+                            <a class="dropdown-item" href="html/geometry/rectangle.html">Rectangle</a> -->
+
+                          </div>
+                        </div>
+                        </div>
+
+                        <div class="dropdown-container text-center">
+                          <div class="dropdown">
+                            <a class="btn btn btn-lg" href="../../html/physics/area.html" role="button" id="dropdownMenuLink">
+                                Area 
+                              </a>
+                            
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <!--finance item-->
+                              </div>
+                            </div>
+                            </div>
+
+
+                            
+
+          </div>
+
+      
+          <div class="text-center">
+
+
+            <div class="row">
+              <div class="col">
+              <label>Pounds</label><br>
+              <input id="pounds" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="Pounds"
+              onchange="fromPoundsToOther(this.value)" oninput="fromPoundsToOther(this.value)"></div>
+                    <div class="col ">
+            <label>Gram</label><br>
+            <input id= "grams" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Grams"
+            onchange="fromGramToOthers(this.value)" oninput = "fromGramToOthers(this.value)">
+            </div>
+            </div>
+            
+            
+            <div class="row">
+              <div class="col">
+              <label>kilogram</label><br>
+            <input id= "kilogram" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Kilogram"
+            onchange="fromKilogramToOther(this.value)" oninput = "fromKilogramToOther(this.value)">
+            </div>
+            <div class="col">
+            <label>Ounces</label><br>
+            <input id= "ounce" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Ounce"
+            onchange="fromOuncesToOther(this.value)" oninput = "fromOuncesToOther(this.value)">
+            </div>
+            </div>
+            
+            <div class="row">
+              <div class="col">
+            <label>Short-ton</label><br>
+            <input id= "short-ton" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="lb"
+            onchange="fromshorttonToOthers(this.value)" oninput = "fromshorttonToOthers(this.value)">
+            </div>
+            
+            <div class="col">
+                <label>Metric ton</label><br>
+                <input id= "metric-ton" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Metric Ton"
+                onchange="fromMetricTonToOthers(this.value)" oninput = "fromMetricTonToOthers(this.value)">
+                </div>
+            
+            </div>
+            
+            
+            </div>
+            <script src = "../../js/physics/weight-conversion.js"></script>
+
+
+</div>
+</div>
+
+
+<div class="container-fluid">
+  <h1 class="text-center">Brief History of Mass</h1>
+  <p class="about-para">
+    The history of the mass dates back to the 4th century1. The term ‘mass’ is derived from the 
+    Latin massa meaning a lump of dough or paste2. The mass has undergone several reforms, including
+     the Reform of St. Gregory the Great, the Reform of Pope St. Pius V, and the Protestant Break with 
+     Liturgical Tradition1. The development of the Low Mass and the importance of printing were also
+     significant in the history of the mass <br>
+    The SI base unit of mass is the kilogram (kg). In physics, mass is not the same as weight, 
+    even though mass is often determined by measuring the object's weight using a spring scale, 
+    rather than balance scale comparing it directly with known masses. An object on the Moon would 
+    weigh less than it does on Earth because of the lower gravity, but it would still have the same mass. 
+    This is because weight is a force, while mass is the property that (along with gravity) determines the 
+    strength of this force.
+  </p>
+</div>
+</div>
+<!-- java start -->
+<script src="../../js/sidebar.js"></script>
+<!-- java ends -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src = "../../js/physics/temperature-conversion.js"></script>
+</body>
+<footer class="bg-dark">
+  <div class="container-fluid text-center">
+      <a href="https://www.facebook.com/shaikhsajid1111" class="fa fa-facebook" target="_blank"></a>
+      <a href="https://www.twitter.com/shaikhsajid1111" class="fa fa-twitter" target="_blank"></a>
+      <a href="https://www.instagram.com/shaikhsajid1111" class="fa fa-instagram" target="_blank"></a>
+      <a href="https://www.github.com/shaikhsajid1111" class="fa fa-github" target="_blank"></a>
+  </div>
+  <p class="pt-2 text-center text-white"><a href="https://www.github.com/shaikhsajid1111" class="text-white">USMAN JAMSHAID,UMERJAMSHAIS,SHRJEEL HAFIZ &#169; 2020
+  </a></p>
+
+
+</footer>
+</html>

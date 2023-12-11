@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<title>Unit Converter - Volume</title>
+
+<head>
+  <link rel="icon" href="../../image/web-logo.jpg">
+  <link rel="stylesheet" href="../../style/index.css">
+  <!--SIDEBAR BOOSTRAP-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Font awesomq-->
+
+  <!--Meta tags-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+
+
+</head>
+
+<body>
+  <!-- sidebar starts -->
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+    <div class="dropdown-container">
+      <a href="../../index.html" class="w3-bar-item btn btn btn btn-secondary mb-3">Home</a>
+      <a href="../../html/physics/Weigth.html" class="w3-bar-item btn btn mb-3">Mass</a>
+      <a href="../../html/physics/length.html" class="w3-bar-item btn btn mb-3">Length</a>
+      <a href="../../html/physics/temperature.html" class="w3-bar-item btn btn mb-3">Temperature</a>
+      <a href="../../html/physics/volume.html" class="w3-bar-item btn btn mb-3">Volume</a>
+      <a href="../../html/physics/area.html" class="w3-bar-item btn btn mb-3">Area</a>
+      <a href="../../html/physics/(FAQs).html" class="w3-bar-item btn btn-secondary mb-3">FAQs</a>
+    </div>
+  </div>
+
+  <div id="main">
+
+    <div class="w3-teal text-white bg-dark ">
+      <button id="openNav" class="w3-button w3-teal w3-xlarge text-white bg-dark" onclick="w3_open()">&#9776;</button>
+      <img class="logo" src="../../web-logo.png" alt="" srcset="">
+      <div class="w3-container">
+
+      </div>
+    </div>
+
+    <h1 class="text-center text-white bg-dark header-text text-uppercase"> <a href="#" class="text-light">Conversion
+        Calculator</a> <i class="fa fa-calculator"></i></h1>
+    <h2 class="text-center">Volume Conversion</h2>
+    <p class="about-para">
+      Volume is a measure of regions in three-dimensional space. It is often quantified numerically using 
+      SI derived units (such as the cubic metre and litre) or by various imperial or US customary units 
+      (such as the gallon, quart, cubic inch). The definition of length (cubed) is interrelated with volume. 
+      The volume of a container is generally understood to be the capacity of the container; i.e., 
+      the amount of fluid (gas or liquid) that the container could hold, rather than the amount of space the 
+      container itself displaces. By metonymy, the term "volume" sometimes is used to refer to the corresponding 
+      region (e.g., bounding volume).
+
+    </p>
+    
+    <p class="about-para">
+    <h3 class="text-center">Enter value in any input field to determine values in other units</h3>
+    </p>
+
+    <div class="container jumbotron">
+      <div class="container-fluid">
+
+
+        <div class="row">
+          <div class="dropdown-container text-center ">
+            <div class="dropdown">
+              <a class="btn btn btn-lg" href="../../html/physics/Weigth.html" role="button" id="dropdownMenuLink">
+                Mass
+              </a>
+            </div>
+          </div>
+
+
+
+          <div class="dropdown-container text-center">
+            <div class="dropdown">
+              <a class="btn btn btn-lg" href="../../html/physics/length.html" role="button" id="dropdownMenuLink">
+                length
+              </a>
+            </div>
+          </div>
+
+          <div class="dropdown-container text-center">
+            <div class="dropdown">
+              <a class="btn btn btn-lg" href="../../html/physics/temperature.html" role="button" id="dropdownMenuLink">
+                Temperature
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="dropdown-container text-center">
+            <div class="dropdown">
+              <a class="btn btn btn-lg" href="../../html/physics/volume.html" role="button" id="dropdownMenuLink">
+                Volume
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown-container text-center">
+            <div class="dropdown">
+              <a class="btn btn btn-lg" href="../../html/physics/area.html" role="button" id="dropdownMenuLink">
+                Area
+              </a>
+
+
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+
+        <div class="text-center">
+
+
+
+          <div class="row">
+            <div class="col">
+              <label>ounces</label><br>
+              <input id="ounces" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="ounces"
+                onchange="fromouncesToOther(this.value)" oninput="fromouncesToOther(this.value)">
+            </div>
+            <div class="col ">
+              <label>milliliters</label><br>
+              <input id="milliliters" class="form-control text-center  mb-2 mr-sm-2" type="number"
+                placeholder="milliliters" onchange="frommillilitersToOthers(this.value)"
+                oninput="frommillilitersToOthers(this.value)"><br>
+            </div>
+          </div>
+
+          <!-- fromgallonToOthers -->
+
+
+          <div class="row">
+            <div class="col">
+              <label>Gallons</label><br>
+              <input id="gallons" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Gallons"
+                onchange = "fromgallontoothers(this.value)" oninput = "fromgallontoothers(this.value)">
+            </div>
+            <div class="col">
+              <label>liters</label><br>
+              <input id="liters" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="liters"
+                onchange="fromlitersToOthers(this.value)" oninput="fromlitersToOthers(this.value)">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label>cubic-feet</label><br>
+              <input id="cubic feet" class="form-control text-center  mb-2 mr-sm-2" type="number"
+                placeholder="cubic feet" onchange="fromcubicfeetToOthers(this.value)"
+                oninput="fromcubicfeetToOthers(this.value)">
+            </div>
+
+            <div class="col">
+              <label>cubic-yards</label><br>
+              <input id="cubic yards" class="form-control text-center  mb-2 mr-sm-2" type="number"
+                placeholder="cubic yards" onchange="fromcubicyardsToOthers(this.value)"
+                oninput="fromcubicyardsToOthers(this.value)">
+            </div>
+
+          </div>
+
+
+          <div class="row">
+            <div class="col">
+              <label>cubic-meters</label><br>
+              <input id="cubic meters" class="form-control text-center  mb-2 mr-sm-2" type="number"
+                placeholder="cubic meters" onchange="fromcubicmetersToOthers(this.value)"
+                oninput="fromcubicmetersToOthers(this.value)">
+            </div>
+
+          </div>
+
+
+
+        </div>
+        <script src="../../js/physics/volume-conversion.js"></script>
+
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <h1 class="text-center">Brief History of volume</h1>
+      <p class="about-para">In ancient times, volume was measured using similar-shaped natural containers. Later on, 
+        standardized containers were used.
+         Some simple three-dimensional shapes can have their volume easily 
+         calculated using arithmetic formulas. Volumes of more complicated shapes can be calculated with integral 
+         calculus if a formula exists for the shape's boundary. Zero-, one- and two-dimensional objects have no volume; 
+         in fourth and higher dimensions, an analogous concept to the normal volume is the hypervolume.</p>
+      <p class="about-para">
+        The metric units of volume uses metric prefixes, strictly in powers of ten. 
+        When applying prefixes to units of volume, which are expressed in units of length cubed, 
+        the cube operators are applied to the unit of length including the prefix. An example of 
+        converting cubic centimetre to cubic metre is: 2.3 cm3 = 2.3 (cm)3 = 2.3 (0.01 m)3 = 0.0000023 m3 
+        (five zeros)
+      </p>
+      <p class="about-para">When Archimedes, the ancient Greek mathematician, hopped in the bathtub, he noticed that the water rose a 
+      little bit and realized that he had just discovered how to measure volume. The story goes that he was so 
+      excited, he ran down the street naked shouting, “Eureka!” (that means "I've found it!")
+      </p>
+    </div>
+  </div>
+  <!-- java start -->
+  <script src="../../js/sidebar.js"></script>
+  <!-- java ends -->
+
+</body>
+<footer class="bg-dark">
+  <div class="container-fluid text-center">
+    <a href="https://www.facebook.com/shaikhsajid1111" class="fa fa-facebook" target="_blank"></a>
+    <a href="https://www.twitter.com/shaikhsajid1111" class="fa fa-twitter" target="_blank"></a>
+    <a href="https://www.instagram.com/shaikhsajid1111" class="fa fa-instagram" target="_blank"></a>
+    <a href="https://www.github.com/shaikhsajid1111" class="fa fa-github" target="_blank"></a>
+  </div>
+  <p class="pt-2 text-center text-white"><a href="https://www.github.com/shaikhsajid1111" class="text-white">USMAN
+      JAMSHAID,UMERJAMSHAIS,SHRJEEL HAFIZ &#169; 2020
+    </a></p>
+
+
+</footer>
+
+</html>
